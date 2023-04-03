@@ -19,6 +19,9 @@ asciidoc:
     idprefix: ''
     idseparator: '-'
     page-pagination: ''
+antora:
+  extensions:
+  - '@antora/lunr-extension'
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
