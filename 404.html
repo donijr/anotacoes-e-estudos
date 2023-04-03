@@ -13,6 +13,11 @@
   <nav class="navbar">
     <div class="navbar-brand">
       <a class="navbar-item" href="https://antora.gitlab.io/demo/docs-site">Antora Demo Site</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -107,5 +112,8 @@ If you typed the URL of this page manually, please double check that you entered
 </footer>
 <script id="site-script" src="/demo/docs-site/_/js/site.js" data-ui-root-path="/demo/docs-site/_"></script>
 <script async src="/demo/docs-site/_/js/vendor/highlight.js"></script>
+<script src="/demo/docs-site/_/js/vendor/lunr.js"></script>
+<script src="/demo/docs-site/_/js/search-ui.js" id="search-ui-script" data-site-root-path="/demo/docs-site" data-snippet-length="100" data-stylesheet="/demo/docs-site/_/css/search.css"></script>
+<script async src="/demo/docs-site/search-index.js"></script>
   </body>
 </html>
