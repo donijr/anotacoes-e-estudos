@@ -1,3 +1,6 @@
+antora:
+  extensions:
+  - require: '@antora/lunr-extension'
 site:
   title: Antora Demo Site
   # the 404 page and sitemap files only get generated when the url property is set
@@ -19,9 +22,6 @@ asciidoc:
     idprefix: ''
     idseparator: '-'
     page-pagination: ''
-antora:
-  extensions:
-    - require: '@antora/lunr-extension'
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
